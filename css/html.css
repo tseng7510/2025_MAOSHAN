@@ -1,0 +1,31 @@
+:root {
+  --RWDWidth: 1024px;
+}
+
+.htmlPage main {
+  margin-bottom: 0;
+}
+.htmlPage .mainBox {
+  padding-top: 0;
+  background: none;
+}
+.htmlPage section .outerBox {
+  max-width: none;
+  padding: 12vw 0 8vw;
+  background: #D6D6D6 url("../images/in/hbg.jpg") center top repeat-x;
+}
+@media screen and (max-width: 767px) {
+  .htmlPage section .outerBox {
+    padding: 60px 0 50px;
+  }
+}
+.htmlPage .editorOuter {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+.htmlPage .editorOuter .companyName {
+  color: #1B4A2D;
+  font-weight: bold;
+}/*# sourceMappingURL=html.css.map */

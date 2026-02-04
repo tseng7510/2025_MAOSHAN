@@ -1,0 +1,111 @@
+:root {
+  --RWDWidth: 1024px;
+}
+
+.aboutPage main {
+  background: #D6D6D6;
+  overflow: hidden;
+  margin-bottom: 0 !important;
+  padding-bottom: 50px;
+}
+.aboutPage .mainBox {
+  background: none;
+}
+@media screen and (min-width: 1025px) {
+  .aboutPage .mainBox .container {
+    padding-right: 0;
+    margin-right: 0;
+  }
+  .aboutPage .mainBox .container .contentBox {
+    margin-right: 0 !important;
+    max-width: 1655px;
+  }
+}
+.aboutPage .editor {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .aboutPage .editor {
+    flex-direction: column;
+  }
+}
+.aboutPage .editor .info {
+  width: 35%;
+  flex-grow: 1;
+}
+@media screen and (max-width: 1360px) {
+  .aboutPage .editor .info {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .aboutPage .editor .info {
+    width: 100%;
+  }
+}
+.aboutPage .editor .info .title {
+  color: #1B4A2D;
+  font-size: var(--clamp84);
+  font-weight: bold;
+  line-height: 1;
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .editor .info .title {
+    font-size: 1.875rem;
+  }
+}
+.aboutPage .editor .info .sub {
+  line-height: 1.2;
+  font-size: var(--clamp36);
+  font-weight: bold;
+  margin-bottom: 50px;
+  white-space: nowrap;
+}
+@media screen and (max-width: 1650px) {
+  .aboutPage .editor .info .sub {
+    font-size: 1.875rem;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .aboutPage .editor .info .sub {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .editor .info .sub {
+    font-size: 1.25rem;
+  }
+}
+.aboutPage .editor .info .con {
+  font-size: var(--clamp21);
+  font-weight: 500;
+}
+.aboutPage .editor .info .con span {
+  font-size: var(--clamp28);
+  display: block;
+  font-weight: 700;
+}
+.aboutPage .editor .picBox {
+  width: 65%;
+  max-width: 1015px;
+  background: url("../images/in/abg.jpg") center no-repeat;
+  background-size: cover;
+  padding: 0 0 4vw 4vw;
+  margin-top: 5vw;
+}
+@media screen and (max-width: 1360px) {
+  .aboutPage .editor .picBox {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .aboutPage .editor .picBox {
+    width: 100%;
+  }
+}
+.aboutPage .editor .picBox .pic {
+  margin-top: -6vw;
+}/*# sourceMappingURL=about.css.map */

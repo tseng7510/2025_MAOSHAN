@@ -1,0 +1,298 @@
+:root {
+  --RWDWidth: 1024px;
+}
+
+.newsPage .listBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.newsPage .listBox .item {
+  width: calc((100% - 30px * (2 - 1)) / 2);
+  background: #FFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 767px) {
+  .newsPage .listBox .item {
+    width: 100%;
+  }
+}
+.newsPage .listBox a {
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 1024px) {
+  .newsPage .listBox a {
+    padding: 30px 30px 60px;
+  }
+}
+.newsPage .listBox a > * {
+  max-width: 680px;
+}
+.newsPage .listBox a::before {
+  content: "";
+  width: 16px;
+  height: 17px;
+  display: block;
+  -webkit-mask: url("../images/icon/icon_arrow.svg") center no-repeat;
+          mask: url("../images/icon/icon_arrow.svg") center no-repeat;
+  background: #1B4A2D;
+  z-index: 9;
+  position: absolute;
+  right: 17px;
+  bottom: 13px;
+  transform: scaleX(-1);
+  transition: all 0.3s ease;
+}
+.newsPage .listBox a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  height: 45px;
+  background: linear-gradient(-45deg, white 40%, #dddddd 100%);
+  transition: all 0.3s ease;
+}
+.newsPage .listBox a:hover {
+  background: #617877;
+}
+.newsPage .listBox a:hover::before {
+  background: #FFCC00;
+}
+.newsPage .listBox a:hover::after {
+  background: #1B4A2D;
+}
+.newsPage .listBox a:hover time {
+  color: #FFCC00;
+  border-color: #FFCC00;
+}
+.newsPage .listBox a:hover .title,
+.newsPage .listBox a:hover .description {
+  color: #fff;
+}
+.newsPage .listBox time {
+  display: block;
+  width: 150px;
+  text-align: center;
+  color: #1B4A2D;
+  padding: 3px 20px 0;
+  border-radius: 50px;
+  border: 1px solid #1B4A2D;
+  font-size: var(--clamp18);
+  margin-bottom: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.newsPage .listBox .title {
+  font-size: var(--clamp24);
+  transition: all 0.3s ease;
+}
+.newsPage .listBox .description {
+  font-size: var(--clamp18);
+  transition: all 0.3s ease;
+}
+
+.newsDetailPage .topBox {
+  display: flex;
+  position: relative;
+  background: #FFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+@media screen and (max-width: 1024px) {
+  .newsDetailPage .topBox {
+    flex-direction: column;
+  }
+}
+.newsDetailPage .topBox .timeBox {
+  width: 23%;
+  position: relative;
+  background: #FFF;
+  padding: 4% 20px;
+}
+@media screen and (max-width: 1024px) {
+  .newsDetailPage .topBox .timeBox {
+    width: 250px;
+    padding: 30px;
+  }
+}
+.newsDetailPage .topBox .timeBox::before {
+  content: "";
+  position: absolute;
+  width: 250%;
+  height: 500%;
+  bottom: 0;
+  right: 0;
+  background: #1B4A2D;
+  z-index: -1;
+}
+.newsDetailPage .topBox time {
+  display: block;
+  width: 150px;
+  text-align: center;
+  color: #1B4A2D;
+  padding: 3px 20px 0;
+  border-radius: 50px;
+  border: 1px solid #1B4A2D;
+  font-size: var(--clamp18);
+  margin-bottom: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin: 0 20% 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .newsDetailPage .topBox time {
+    margin: unset;
+  }
+}
+.newsDetailPage .topBox .title {
+  width: 77%;
+  font-size: var(--clamp45);
+  line-height: 1.2;
+  position: relative;
+  z-index: 6;
+  padding: 4% 0;
+  border-bottom: 15px solid #1B4A2D;
+}
+@media screen and (max-width: 1024px) {
+  .newsDetailPage .topBox .title {
+    width: 100%;
+    padding: 0 30px 30px;
+  }
+}
+.newsDetailPage .editorBox {
+  width: 77%;
+  margin: 0 0 0 auto;
+  padding: 50px 0 0;
+}
+@media screen and (max-width: 1024px) {
+  .newsDetailPage .editorBox {
+    width: 100%;
+    padding-top: 30px;
+  }
+}
+.newsDetailPage .editorBox .editor {
+  max-width: 1160px;
+}
+
+.videoPage main {
+  background: #D6D6D6;
+  overflow: hidden;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.videoPage .mainBox {
+  background: none;
+}
+.videoPage .pagination {
+  display: flex;
+  gap: 10px;
+}
+.videoPage .pagination .swiper-pagination-bullet {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: none;
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+}
+.videoPage .pagination .swiper-pagination-bullet::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #888888;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.videoPage .pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  border-color: #1B4A2D;
+}
+.videoPage .pagination .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+  background: #000;
+}
+.videoPage section .contentBox {
+  display: flex;
+  padding-left: 5%;
+}
+@media screen and (max-width: 1024px) {
+  .videoPage section .contentBox {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .videoPage section .contentBox {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.videoPage section .contentBox .info {
+  width: 45%;
+  padding-right: 5%;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .videoPage section .contentBox .info {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+.videoPage section .contentBox .info::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 500%;
+  bottom: 0;
+  right: 0;
+  background: #D6D6D6;
+  z-index: -1;
+}
+.videoPage section .contentBox .info .title {
+  font-size: var(--clamp54);
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.videoPage section .contentBox .info .description {
+  font-size: var(--clamp21);
+  line-height: 1.4;
+}
+.videoPage section .contentBox .info .swiper {
+  margin-bottom: 3.5vw;
+}
+.videoPage section .contentBox .video {
+  width: 55%;
+  padding-left: 5%;
+  padding-bottom: 5vw;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .videoPage section .contentBox .video {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+.videoPage section .contentBox .video::before {
+  content: "";
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, white 30%, rgba(255, 255, 255, 0) 100%);
+}
+@media screen and (max-width: 1024px) {
+  .videoPage section .contentBox .video::before {
+    left: -50px;
+  }
+}/*# sourceMappingURL=news.css.map */

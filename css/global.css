@@ -1,0 +1,145 @@
+:root {
+  --RWDWidth: 1024px;
+}
+
+.globalPage {
+  position: relative;
+  isolation: isolate;
+}
+.globalPage .pageTitleBox {
+  padding-bottom: 0 !important;
+}
+.globalPage .mainBox {
+  padding-bottom: 140px;
+}
+@media screen and (max-width: 767px) {
+  .globalPage .mainBox {
+    padding-bottom: 100px;
+  }
+}
+.globalPage .mainBox::before {
+  content: "";
+  position: fixed;
+  inset: 40vh 0 0 0;
+  display: block;
+  background: url("../images/in/gbg.jpg") center top no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.globalPage .mainBox .contentBox .continentTitle {
+  color: #1B4A2D;
+  font-size: var(--clamp46);
+  text-align: left;
+  line-height: 1.2;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 767px) {
+  .globalPage .mainBox .contentBox .continentTitle {
+    margin-bottom: 30px;
+  }
+}
+.globalPage .mainBox .contentBox > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+@media screen and (max-width: 767px) {
+  .globalPage .mainBox .contentBox > ul {
+    gap: 50px;
+  }
+}
+.globalPage .mainBox .contentBox .listBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.globalPage .mainBox .contentBox .listBox > li {
+  min-height: 400px;
+  padding: 0 55px 60px;
+  position: relative;
+  background: linear-gradient(to bottom, #222222 0%, black 90%);
+  border: #2C2C2C 1px solid;
+  width: calc((100% - 20px * (2 - 1)) / 2);
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 767px) {
+  .globalPage .mainBox .contentBox .listBox > li {
+    min-height: auto;
+    padding: 0 30px 50px;
+    width: calc((100% - 20px * (1 - 1)) / 1);
+  }
+}
+.globalPage .mainBox .contentBox .listBox .location {
+  position: relative;
+  right: 0;
+  top: 0;
+  background: #E40011;
+  color: #fff;
+  padding: 5px 20px;
+  margin: 0 -55px 30px auto;
+}
+@media screen and (max-width: 767px) {
+  .globalPage .mainBox .contentBox .listBox .location {
+    padding: 5px 30px;
+    margin: 0 -30px 30px -30px;
+  }
+}
+.globalPage .mainBox .contentBox .listBox .title {
+  font-size: var(--clamp24);
+  color: #fff;
+  margin-bottom: 5%;
+}
+.globalPage .mainBox .contentBox .listBox .info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.globalPage .mainBox .contentBox .listBox .info li {
+  padding-left: 30px;
+  position: relative;
+  color: #848484;
+}
+.globalPage .mainBox .contentBox .listBox .info li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  background: #848484;
+}
+.globalPage .mainBox .contentBox .listBox .info li.tel::before {
+  -webkit-mask: url("../images/icon/icon_tel.svg") center no-repeat;
+          mask: url("../images/icon/icon_tel.svg") center no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+.globalPage .mainBox .contentBox .listBox .info li.fax::before {
+  -webkit-mask: url("../images/icon/icon_fax.svg") center no-repeat;
+          mask: url("../images/icon/icon_fax.svg") center no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+.globalPage .mainBox .contentBox .listBox .info li.phone::before {
+  -webkit-mask: url("../images/icon/icon_phone.svg") center no-repeat;
+          mask: url("../images/icon/icon_phone.svg") center no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+.globalPage .mainBox .contentBox .listBox .info li.email::before {
+  -webkit-mask: url("../images/icon/icon_mail.svg") center no-repeat;
+          mask: url("../images/icon/icon_mail.svg") center no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+.globalPage .mainBox .contentBox .listBox .info li.web::before {
+  -webkit-mask: url("../images/icon/icon_language.svg") center no-repeat;
+          mask: url("../images/icon/icon_language.svg") center no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+.globalPage .mainBox .contentBox .listBox .info li a:not(:hover) {
+  color: #848484;
+}/*# sourceMappingURL=global.css.map */

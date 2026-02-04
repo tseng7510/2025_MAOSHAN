@@ -1,0 +1,123 @@
+:root {
+  --RWDWidth: 1024px;
+}
+
+.page404 .siteMain {
+  margin-bottom: 0;
+}
+.page404 .siteMain::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20vw;
+  background: #000;
+}
+.page404 .siteMain .outerBox,
+.page404 .siteMain .container,
+.page404 .siteMain section {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.page404 section {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.2;
+  background: #fff;
+  isolation: isolate;
+  padding: 5vw 0;
+}
+.page404 section::before {
+  content: "";
+  top: 0;
+  right: 0;
+  width: 53%;
+  aspect-ratio: 1;
+  pointer-events: none;
+  position: absolute;
+  background: url("../images/in/bt.png") top right no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+@media screen and (max-width: 767px) {
+  .page404 section::before {
+    width: 80%;
+  }
+}
+.page404 section .title404 {
+  font-size: var(--clamp280);
+  font-weight: 800;
+  color: #1B4A2D;
+  position: relative;
+  line-height: 1;
+  z-index: 5;
+}
+.page404 section .sub {
+  width: 100%;
+  max-width: 450px;
+  color: #FFCC00;
+  background: #1B4A2D;
+  font-size: var(--clamp32);
+  padding: 7px 0 10px;
+  margin: 0 auto 3vw;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (max-width: 767px) {
+  .page404 section .sub {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+}
+.page404 section .sub::before, .page404 section .sub::after {
+  content: "";
+  height: 2px;
+  display: block;
+  flex-grow: 1;
+  background: #FFCC00;
+}
+.page404 section .homeBtn {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 17px 40px 12px;
+  color: #1B4A2D;
+  font-size: var(--clamp18);
+  font-weight: 600;
+  border-radius: 50px;
+  border: 1px solid #1B4A2D;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .page404 section .homeBtn {
+    font-size: 1rem;
+  }
+}
+.page404 section .homeBtn::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  background: #1B4A2D;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.page404 section .homeBtn:hover {
+  color: #FFCC00;
+}
+.page404 section .homeBtn:hover::before {
+  width: 100%;
+  left: 0;
+}/*# sourceMappingURL=404.css.map */
