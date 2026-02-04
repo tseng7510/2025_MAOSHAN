@@ -63,7 +63,7 @@
   display: block;
 }
 .productsPage section .item a::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -77,7 +77,7 @@
   opacity: 1;
 }
 .productsPage section .item a:hover .title {
-  color: #FFF;
+  color: #fff;
 }
 @media screen and (max-width: 1024px) {
   .productsPage section .item a:hover .title {
@@ -99,7 +99,7 @@
   isolation: isolate;
 }
 .productsPage section .item a .info::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   display: block;
@@ -110,7 +110,7 @@
 }
 .productsPage section .item a .title {
   font-size: var(--clamp32);
-  color: #FFCC00;
+  color: #ffcc00;
   transition: all 0.3s ease;
 }
 .productsPage section .item a .description {
@@ -171,18 +171,18 @@
   display: block;
   width: 150px;
   text-align: center;
-  color: #1B4A2D;
+  color: #1b4a2d;
   padding: 10px 20px 7px;
   border-radius: 50px;
-  border: 1px solid #1B4A2D;
+  border: 1px solid #1b4a2d;
   font-size: var(--clamp18);
   font-weight: 500;
   margin: 0 auto;
   transition: all 0.3s ease;
 }
 .products2Page section .topBox .btnMore:hover {
-  color: #FFCC00;
-  background: #1B4A2D;
+  color: #ffcc00;
+  background: #1b4a2d;
 }
 .products2Page section .listBox {
   display: flex;
@@ -197,7 +197,7 @@
 .products2Page section .item {
   aspect-ratio: 1;
   width: calc((100% - 28px * (4 - 1)) / 4);
-  background: url("../images/in/pbg.png") center bottom no-repeat;
+  background: url('../images/in/pbg.png') center bottom no-repeat;
   cursor: pointer;
 }
 @media screen and (max-width: 1024px) {
@@ -219,11 +219,11 @@
   isolation: isolate;
 }
 .products2Page section .item a::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   z-index: 2;
-  background: url("../images/in/phover.png") center bottom no-repeat;
+  background: url('../images/in/phover.png') center bottom no-repeat;
   opacity: 0;
   z-index: -1;
   transition: all 0.3s ease;
@@ -248,8 +248,8 @@
   align-items: center;
   gap: 20px;
   padding: 10px 10px 8px 0;
-  color: #FFCC00;
-  background: #1B4A2D;
+  color: #ffcc00;
+  background: #1b4a2d;
   font-size: var(--clamp20);
   overflow: hidden;
   isolation: isolate;
@@ -267,11 +267,11 @@
   }
 }
 .products2Page section .item .title::before {
-  content: "";
+  content: '';
   width: 34px;
   height: 3px;
   display: block;
-  background: #FFCC00;
+  background: #ffcc00;
 }
 @media screen and (max-width: 767px) {
   .products2Page section .item .title::before {
@@ -282,7 +282,7 @@
   position: relative;
 }
 .products2Page section .item.discontinued::before {
-  content: "Discontinued";
+  content: 'Discontinued';
   position: absolute;
   font-weight: bold;
   font-size: var(--clamp40);
@@ -346,7 +346,7 @@
   margin: 0 auto;
 }
 .productsDetailPage section .contentBox::after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
 }
@@ -365,13 +365,13 @@
   }
 }
 .productsDetailPage section .top::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 250%;
   height: 500%;
   bottom: 0;
   right: 0;
-  background: #1B4A2D;
+  background: #1b4a2d;
   z-index: -1;
 }
 .productsDetailPage section .top .title,
@@ -400,7 +400,7 @@
 }
 .productsDetailPage section .top .slogan {
   font-weight: bold;
-  color: #FFCC00;
+  color: #ffcc00;
   font-size: var(--clamp28);
 }
 .productsDetailPage section .features {
@@ -433,7 +433,7 @@
   line-height: 1.2;
 }
 .productsDetailPage section .features .list li::before {
-  content: "-";
+  content: '-';
   position: absolute;
   left: 0;
 }
@@ -455,8 +455,8 @@
   gap: 20px;
   padding: 10px 14% 10px 0;
   height: 70px;
-  color: #FFCC00;
-  background: #1B4A2D;
+  color: #ffcc00;
+  background: #1b4a2d;
   font-size: var(--clamp20);
   overflow: hidden;
   white-space: nowrap;
@@ -467,15 +467,15 @@
   transform: translateY(50%);
 }
 .productsDetailPage section .picBox .addBtn::before {
-  content: "";
+  content: '';
   width: 68px;
   height: 3px;
   display: block;
-  background: #FFCC00;
+  background: #ffcc00;
   flex-shrink: 0;
 }
 .productsDetailPage section .picBox .addBtn::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   right: 0;
@@ -496,7 +496,7 @@
   isolation: isolate;
 }
 .productsDetailPage .descriptionBox::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -523,7 +523,7 @@
   position: relative;
 }
 .productsDetailPage .descriptionBox .listBox::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 50%;
   top: 0;
@@ -538,7 +538,6 @@
 }
 .productsDetailPage .descriptionBox .listBox .item {
   width: calc((100% - 0px * (2 - 1)) / 2);
-  flex-grow: 1;
   display: flex;
   gap: 20px;
   padding: 5% 40px;
@@ -556,11 +555,12 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .productsDetailPage .descriptionBox .listBox .item:nth-child(1), .productsDetailPage .descriptionBox .listBox .item:nth-child(2) {
+  .productsDetailPage .descriptionBox .listBox .item:nth-child(1),
+  .productsDetailPage .descriptionBox .listBox .item:nth-child(2) {
     padding-top: 0;
   }
 }
-.productsDetailPage .descriptionBox .listBox .item:last-child {
+.productsDetailPage .descriptionBox .listBox .item.last {
   border: none;
 }
 .productsDetailPage .descriptionBox .listBox .item .pic {
@@ -575,7 +575,7 @@
   width: auto !important;
 }
 .productsDetailPage .descriptionBox .listBox .item .info .title {
-  color: #1B4A2D;
+  color: #1b4a2d;
   font-weight: 800;
   font-size: var(--clamp20);
 }
@@ -586,7 +586,7 @@
 .productsDetailPage .infoBottomBox {
   position: relative;
   isolation: isolate;
-  background: #1B4A2D;
+  background: #1b4a2d;
 }
 .productsDetailPage .infoBottomBox .contentBox {
   display: flex;
@@ -627,14 +627,14 @@
   font-size: var(--clamp28);
   font-weight: 700;
   margin-bottom: 20px;
-  color: #FFCC00;
+  color: #ffcc00;
 }
 .productsDetailPage .infoBottomBox .box .list {
   font-weight: 600;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: #FFF;
+  color: #fff;
 }
 .productsDetailPage .infoBottomBox .box .list li {
   position: relative;
@@ -643,7 +643,7 @@
   font-size: var(--clamp18);
 }
 .productsDetailPage .infoBottomBox .box .list li::before {
-  content: "-";
+  content: '-';
   position: absolute;
   left: 0;
-}/*# sourceMappingURL=products.css.map */
+} /*# sourceMappingURL=products.css.map */

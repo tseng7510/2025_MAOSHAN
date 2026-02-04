@@ -174,7 +174,20 @@
     <?php include('include_footer.php'); ?>
   </div>
   <?php include('include_body_bottom.php'); ?>
+  <script>
+    $(function() {
 
+      $(function() {
+        let length = $('.descriptionBox .item').length;
+        if (Math.abs($('.descriptionBox .item').length % 2) !== 1) {
+          $('.descriptionBox .item').eq(length - 2).addClass('last');
+          $('.descriptionBox .item').last().addClass('last');
+        } else {
+          $('.descriptionBox .item').last().addClass('last');
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
