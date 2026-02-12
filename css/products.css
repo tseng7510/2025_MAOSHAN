@@ -443,6 +443,8 @@
   position: relative;
   float: right;
   aspect-ratio: 1;
+  margin-bottom: 50px;
+  margin-top: 45px;
 }
 @media screen and (max-width: 767px) {
   .productsDetailPage section .picBox {
