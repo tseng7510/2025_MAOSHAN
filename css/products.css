@@ -353,7 +353,7 @@
 .productsDetailPage section .top {
   position: relative;
   padding: 4vw 0 5vw;
-  width: 48%;
+  width: 50%;
   float: left;
   z-index: 2;
 }
@@ -407,7 +407,7 @@
   padding: 4vw 0;
   padding-right: 40px;
   float: left;
-  width: 48%;
+  width: 50%;
 }
 @media screen and (max-width: 767px) {
   .productsDetailPage section .features {
@@ -438,16 +438,21 @@
   left: 0;
 }
 .productsDetailPage section .picBox {
-  width: 52%;
+  width: 50%;
   min-height: 80px;
   position: relative;
   float: right;
+  aspect-ratio: 1;
 }
 @media screen and (max-width: 767px) {
   .productsDetailPage section .picBox {
     float: none;
     width: 100%;
   }
+}
+.productsDetailPage section .picBox .pic {
+  max-width: 600px;
+  margin: 0 auto;
 }
 .productsDetailPage section .picBox .addBtn {
   display: flex;
